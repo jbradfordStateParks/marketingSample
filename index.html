@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DE State Parks</title>
+    <meta name="description" content="Enjoy the natural diversity of Delaware's 17 state parks. From hiking, camping, swimming, and fishing, to nature programs and touring historic sites, there is truly something for everyone at Delaware State Parks!">
+    <meta name="author" content="The State of Delaware">
+    
+    
+	<link href="lib/bootstrap.min.css" rel="stylesheet" />
+	<link href="lib/DSPFonts.css" rel="stylesheet" />
+    <link href="css/de_parks_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    
+</head>
+<body>
+
+    
+
+    <div id="wrapper">
+        <a href="index.html"><img src="img/logo.png" alt="DE State Parks logo" /></a>
+    </div>
+
+    <div id="nav-wrapper">
+        <nav class="nav" id="nav" data-spy="affix" data-offset-top="">
+            <div class="container-fluid mainMenu">
+                <div class="row hidden-xs">
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Places To Go</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Reservations</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Adventures</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Events</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Get Involved</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Things to Know</a>
+                    </div><!--col-sm-2-->
+                </div><!--row hidden-xs-->
+            </div><!--container-fluid-->
+            <!-- BEGIN Fixed Main Nav Bar -->
+
+            <div class="collapse navInner hidden-xs" id="collapseMainNav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropParks" aria-k="true" aria-expanded="true">Find a Park <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropParks">
+
+                                    <li>Alapocas Run</li>
+                                    <li>Bellevue</li>
+                                    <li>Brandywine Creek</li>
+                                    <li><a href="park.html">Cape Henlopen</a></li>
+                                    <li>Delaware Seashore & Indian River Marina</li>
+                                    <li>Fenwick Island</li>
+                                    <li>First State Heritage Park</li>
+                                    <li>Fort Delaware</li>
+                                    <li>Fort DuPont</li>
+                                    <li>Fox Point</li>
+                                    <li>Holts Landing</li>
+                                    <li>Killens Pond</li>
+                                    <li>Lums Pond</li>
+                                    <li>Trap Pond</li>
+                                    <li>White Clay Creek</li>
+                                    <li>Wilmington State Parks</li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropAttraction" aria-haspopup="true" aria-expanded="true">Find an Attraction <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropAttraction">
+                                    <li><a href="#">Auburn Heights Preserve</a></li>
+                                    <li><a href="#">Brandywine Zoo</a></li>
+                                    <li><a href="#">Deerfield Golf & Tennis</a></li>
+                                    <li><a href="#">Fort Miles Historical Area</a></li>
+                                    <li><a href="#">Garrisons Lake Golf Course</a></li>
+                                    <li><a href="venue.html"><strong>Hammerheads Dockside</strong></a></li>
+                                    <li><a href="#">Indian River Life-Saving Station</a></li>
+                                    <li><a href="#">Killens Pond Water Park</a></li>
+                                    <li><a href="#">Port Penn Interpretive Center</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropTrail" aria-haspopup="true" aria-expanded="true">Find a Trail <i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropTrail">
+                                    <li><a href="trails.html"><strong>Trail Map</strong></a></li>
+                                    <li><a href="#">Trail Challenge Program</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropStay" aria-haspopup="true" aria-expanded="true">Places to Stay <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropStay">
+                                    <li><a href="#">Reservation Information</a></li>
+                                    <li><a href="#">RV &amp; Tent Camping</a></li>
+                                    <li><a href="#">Cabins</a></li>
+                                    <li><a href="#">Cottages at Indian River Marina</a></li>
+                                    <li><a href="#">Yurts</a></li>
+                                    <li><a href="#">Group Camping</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropMeetings" aria-haspopup="true" aria-expanded="true">Celebrations and Meetings <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropMeetings">
+                                    <li><a href="#">Auburn Heights Preserve</a></li>
+                                    <li><a href="#">Baldcypress Nature Center</a></li>
+                                    <li><a href="#">Bellevue Hall</a></li>
+                                    <li><a href="#">Blue Ball Barn</a></li>
+                                    <li><a href="#">Cauffiel House</a></li>
+                                    <li><a href="#">Figure 8 Barn</a></li>
+                                    <li><a href="#">Grass Dale Center</a></li>
+                                    <li><a href="#">Indian River Life-Saving Station</a></li>
+                                    <li><a href="#">Judge Morris Estate</a></li>
+                                    <li><a href="#">Killens Pond Nature Center</a></li>
+                                    <li><a href="#">Mount Pleasant Meeting House</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Pavilions &amp; Picnic Areas</a><br />
+
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+                            <a href="#">Birding</a><br />
+                            <a href="#">Biking</a><br />
+                            <a href="#">Boating &amp; Marinas</a><br />
+                            <a href="#">Canoeing &amp; Kayaking</a><br />
+                            <a href="#">Climbing</a><br />
+                            <a href="#">Disc Golf</a><br />
+                            <a href="#">Fishing</a><br />
+                            <a href="#">Geocaching</a><br />
+                            <a href="#">Golf</a><br />
+                            <a href="#">Hiking</a><br />
+                            <a href="#">Horseback Riding</a><br />
+                            <a href="#">Hunting</a><br />
+                            <a href="#">Tennis</a><br />
+                            <a href="#">Ziplining</a><br /><br />
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+                            <a href="#"></a>
+                            <a href="programs.html"><strong>Find Events and Programs</strong></a><br />
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropPlay" aria-haspopup="true" aria-expanded="true">Learn &amp; Play<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropPlay">
+                                    <li><a href="#">Day Camps</a></li>
+                                    <li><a href="#">School Group Programs</a></li>
+                                    <li><a href="#">Scout Programs</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropFun" aria-haspopup="true" aria-expanded="true">Outdoor Family Fun<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropFun">
+                                    <li><a href="#">Delaware Outdoor Family</a></li>
+                                    <li><a href="#">Great Parks Pursuit</a></li>
+                                    <li><a href="#">Hayrides</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropConcerts" aria-haspopup="true" aria-expanded="true">Summer Concert Series<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropConcerts">
+                                    <li><a href="#">Bellevue</a></li>
+                                    <li><a href="#">Delaware Seashore</a></li>
+                                    <li><a href="#">Holts Landing</a></li>
+                                    <li><a href="#">Killens Pond</a></li>
+                                    <li><a href="#">Trap Pond</a></li>
+                                    <li><a href="#">White Clay Creek</a></li>
+                                    <li><a href="#">Wilmington</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Time Travelers</a><br />
+
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropVolunteer" aria-haspopup="true" aria-expanded="true">Volunteer at a Park<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropVolunteer">
+                                    <li><a href="#">Search Volunteer Opportunities</a></li>
+                                    <li><a href="#">Volunteer Hosting Program</a></li>
+                                    <li><a href="#">Veterans Conservation Corps</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Make a Donation</a><br />
+                            <a href="#">Apply for an Internship</a><br />
+                            <a href="#">Join a Friends Group</a><br />
+                            <a href="#">Become a Resident Curator</a><br />
+                            <a href="#">Sponsor an Event</a><br />
+                            <a href="#">Join Our Staff</a><br /><br />
+                            <a asp-area="" asp-controller="Form" asp-action="ProgramSubmission">Program Submission Form</a>
+
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navEnd">
+                            <p>&nbsp;</p>
+                            <a href="#">Contact Delaware State Parks</a><br />
+
+                            <div class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropGeneral" aria-haspopup="true" aria-expanded="true">General Information<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL pull-right" aria-labelledby="dropGeneral">
+                                    <li><a href="#">2016 Fee Schedule</a></li>
+                                    <li><a href="#">Beach Wheelchairs</a></li>
+                                    <li><a href="#">Carry-In, Carry-Out Trash Policy</a></li>
+                                    <li><a href="#">Current Park Improvement Projects</a></li>
+                                    <li><a href="#">Drones</a></li>
+                                    <li><a href="#">Passes &amp; Reduced-Cost Programs</a></li>
+                                    <li><a href="#">Pets in the Park</a></li>
+                                    <li><a href="#">Regulations</a></li>
+                                    <li><a href="#">Tobacco-Free Zones</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropResearch" aria-haspopup="true" aria-expanded="true">Park Research<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL pull-right" aria-labelledby="dropResearch">
+                                    <li><a href="#">Oral History Archive</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Passes, Tags &amp; Fees</a><br />
+                            <a href="#">State Contracting Information</a><br /><br />
+                        </div><!--navEnd-->
+
+                    </div><!--row-->
+                </div><!--container-fluid-->
+            </div><!--collapseMainNav-->
+            <!-- END Fixed Main Nav Bar -->
+            <!-- BEGIN Fixed Mobile Nav Bar -->
+            <div class="navbar hidden-sm hidden-md hidden-lg navscroll nav-down">
+                <div class="container-fluid">
+                    <div class="navbar-header ">
+                        <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" id="simple-menu">
+                            <i class="fa fa-align-justify fa-fw fa-lg"></i>Menu
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse sidr" id="defaultNavbar1">
+
+                        <ul class="nav navbar-nav">
+                            <!--mobile main menu list-->
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapsePlaces" aria-expanded="false" aria-controls="collapsePlaces">Places To Go<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapsePlaces">
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseParks" aria-expanded="false" aria-controls="collapseParks">Find a Park<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseParks">
+                                            <li>Alapocas Run</li>
+											<li>Bellevue</li>
+											<li>Brandywine Creek</li>
+											<li><a href="park.html">Cape Henlopen</a></li>
+											<li>Delaware Seashore & Indian River Marina</li>
+											<li>Fenwick Island</li>
+											<li>First State Heritage Park</li>
+											<li>Fort Delaware</li>
+											<li>Fort DuPont</li>
+											<li>Fox Point</li>
+											<li>Holts Landing</li>
+											<li>Killens Pond</li>
+											<li>Lums Pond</li>
+											<li>Trap Pond</li>
+											<li>White Clay Creek</li>
+											<li>Wilmington State Parks</li>
+                                        </ul><!--collapseParks-->
+                                    </li><!--Find  a Park-->
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseAttractions" aria-expanded="false" aria-controls="collapseAttractions">State Park Attraction<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseAttractions">
+                                            <li><a href="#">Auburn Heights Preserve</a></li>
+											<li><a href="venue.html">Brandywine Zoo</a></li>
+											<li><a href="#">Deerfield Golf & Tennis</a></li>
+											<li><a href="#">Fort Miles Historical Area</a></li>
+											<li><a href="#">Garrisons Lake Golf Course</a></li>
+											<li><a href="#">Hammerheads Dockside</a></li>
+											<li><a href="#">Indian River Life-Saving Station</a></li>
+											<li><a href="#">Killens Pond Water Park</a></li>
+											<li><a href="#">Port Penn Interpretive Center</a></li>
+                                        </ul><!--collapseAttractions-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseTrails" aria-expanded="false" aria-controls="collapseTrails">Find a Trail<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseTrails">
+                                            <li><a href="trails.html">Trail Maps</a></li>
+                                            <li><a href="#">Trail Challenge Program</a></li>
+                                        </ul><!--collapseTrails-->
+                                    </li>
+                                </ul><!--collapsePlaces-->
+                            </li><!--Places to go-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseReservations" aria-expanded="false" aria-controls="collapseReservations">Reservations<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseReservations">
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseStay" aria-expanded="false" aria-controls="collapseStay">Places to Stay<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseStay">
+                                            <li><a href="#">Reservation Information</a></li>
+                                            <li><a href="#">RV and Tent Camping</a></li>
+                                            <li><a href="#">Cabins</a></li>
+                                            <li><a href="#">Cottages at Indian River Marina</a></li>
+                                            <li><a href="#">Yurts</a></li>
+                                            <li><a href="#">Group Camping</a></li>
+                                        </ul><!--collapseStay-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseMeetings" aria-expanded="false" aria-controls="collapseMeetings">Celebrations and Meetings<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseMeetings">
+                                            <li><a href="#">Auburn Heights Preserve</a></li>
+                                            <li><a href="#">Baldcypress Nature Center</a></li>
+                                            <li><a href="#">Bellevue Hall</a></li>
+                                            <li><a href="#">Blue Ball Barn</a></li>
+                                            <li><a href="#">Cauffiel House</a></li>
+                                            <li><a href="#">Figure 8 Barn</a></li>
+                                            <li><a href="#">Grass Dale Center</a></li>
+                                            <li><a href="#">Indian River Life-Saving Station</a></li>
+                                            <li><a href="#">Judge Morris Estate</a></li>
+                                            <li><a href="#">Killens Pond Nature Center</a></li>
+                                            <li><a href="#">Mount Pleasant Meeting House</a></li>
+                                        </ul><!--collapseMeetings-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapsePavilions" aria-expanded="false" aria-controls="collapsePavilions">Pavilions + Picnic Areas<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapsePavilions">
+                                            <li><a href="#">Alapocas Run State Park</a></li>
+                                            <li><a href="#">Bellevue State Park</a></li>
+                                            <li><a href="#">Brandywine Creek State Park</a></li>
+                                            <li><a href="park.html">Cape Henlopen State Park</a></li>
+                                            <li><a href="#">Delaware Seashore State Park</a></li>
+                                            <li><a href="#">Fenwick Island State Park</a></li>
+                                            <li><a href="#">Fort Delaware State Park</a></li>
+                                            <li><a href="#">Fort DuPont &amp; Port Penn</a></li>
+                                            <li><a href="#">Holts Landing State Park</a></li>
+                                            <li><a href="#">Killens Pond State Park</a></li>
+                                            <li><a href="#">Lums Pond State Park</a></li>
+                                            <li><a href="#">Trap Pond State Park</a></li>
+                                            <li><a href="#">White Clay Creek State Park</a></li>
+                                            <li><a href="#">Wilmington State Parks</a></li>
+                                        </ul><!--collapsePavilions-->
+                                    </li>
+                                </ul><!--collapseReservations-->
+                            </li><!--Reservations-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseAdventures" aria-expanded="false" aria-controls="collapseAdventures">Adventures<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseAdventures">
+                                    <li><a href="#">Birding</a></li>
+                                    <li><a href="#">Biking</a></li>
+                                    <li><a href="#">Boating &amp; Marinas</a></li>
+                                    <li><a href="#">Canoeing &amp; Kayaking</a></li>
+                                    <li><a href="#">Climbing</a></li>
+                                    <li><a href="#">Disc Golf</a></li>
+                                    <li><a href="#">Fishing</a></li>
+                                    <li><a href="#">Geocaching</a></li>
+                                    <li><a href="#">Golf</a></li>
+                                    <li><a href="#">Hiking</a></li>
+                                    <li><a href="#">Horseback Riding</a></li>
+                                    <li><a href="#">Hunting</a></li>
+                                    <li><a href="#">Tennis</a></li>
+                                    <li><a href="#">Ziplining</a></li>
+                                </ul><!--collapseAdventures-->
+                            </li><!--Adventures-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseEvents" aria-expanded="false" aria-controls="collapseEvents">Events<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseEvents">
+
+                                    <li><a href="programs.html">Find Events and Programs</a></li>
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseLearnPlay" aria-expanded="false" aria-controls="collapseLearnPlay">Learn &amp; Play<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseLearnPlay">
+                                            <li><a href="#">Day Camps</a></li>
+                                            <li><a href="#">School Group Programs</a></li>
+                                            <li><a href="#">Scout Programs</a></li>
+                                        </ul><!--collapseLearnPlay-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseOutdoorFun" aria-expanded="false" aria-controls="collapseOutdoorFun">Outdoor Family Fun<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseOutdoorFun">
+                                            <li><a href="#">Delaware Outdoor Family</a></li>
+                                            <li><a href="#">Great Parks Persuit</a></li>
+                                            <li><a href="#">Hayrides</a></li>
+                                        </ul><!--collapseLearnPlay-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseConcert" aria-expanded="false" aria-controls="collapseConcert">Summer Concert Series<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseConcert">
+                                            <li><a href="#">Bellevue</a></li>
+                                            <li><a href="#">Delaware Seashore</a></li>
+                                            <li><a href="#">Holts Landing</a></li>
+                                            <li><a href="#">Killens Pond</a></li>
+                                            <li><a href="#">Trap Pond</a></li>
+                                            <li><a href="#">White Clay Creek</a></li>
+                                            <li><a href="#">Wilmington</a></li>
+                                        </ul><!--collapseConcert-->
+                                    </li>
+                                    <li><a href="#">Time Travelers</a></li>
+                                </ul><!--collapseEvents-->
+                            </li><!--Events-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseGetInvolved" aria-expanded="false" aria-controls="collapseGetInvolved">Get Involved<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseGetInvolved">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseVolunteer" aria-expanded="false" aria-controls="collapseVolunteer">Volunteer at a Park<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseVolunteer">
+                                            <li><a href="#">Search Volunteer Opportunities</a></li>
+                                            <li><a href="#">Volunteer Hosting Program</a></li>
+                                            <li><a href="#">Veterans Conservation Corps</a></li>
+                                        </ul><!--collapse volunteer-->
+                                    </li>
+                                    <li><a href="#">Make a Donation</a></li>
+                                    <li><a href="#">Apply for an Internship</a></li>
+                                    <li><a href="#">Join a Friends Group</a></li>
+                                    <li><a href="#">Become a Resident Curator</a></li>
+                                    <li><a href="#">Sponsor an Event</a></li>
+                                    <li><a href="#">Join Our Staff</a></li>
+                                </ul><!--collapseGetInvolved-->
+                            </li><!--Get Involved-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseKnow" aria-expanded="false" aria-controls="collapseKnow">Things to Know<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseKnow">
+                                    <li><a href="#">Contact Delaware State Parks</a></li>
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseGeneralInfo" aria-expanded="false" aria-controls="collapseGeneralInfo">General Information<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseGeneralInfo">
+                                            <li><a href="#">2017 Fee Schedule</a></li>
+                                            <li><a href="#">Beach Wheelchairs</a></li>
+                                            <li><a href="#">Carry-In, Carry-Out Trash Policy</a></li>
+                                            <li><a href="#">Current Park Improvement Projects</a></li>
+                                            <li><a href="#">Drones</a></li>
+                                            <li><a href="#">Passes &amp; Reduced Cost Programs</a></li>
+                                            <li><a href="#">Pets in the Park</a></li>
+                                            <li><a href="#">Regulations</a></li>
+                                            <li><a href="#">Tobacco-Free Zones</a></li>
+                                        </ul><!--collapseGeneralInfo-->
+                                    </li>
+                                    <li><a href="#">Park Research</a></li>
+                                    <li><a href="#">Passes, Tags and Fees</a></li>
+                                    <li><a href="#">State Contracting Information</a></li>
+                                </ul><!--collapseKnow-->
+                            </li><!--Things to Know-->
+
+                        </ul><!--mobile main menu list-->
+                    </div><!--sidr-->
+                </div>
+            </div>
+            <!-- END Fixed Mobile Nav Bar -->
+        </nav>
+    </div><!--nav-wrapper-->
+
+    <div class="body-content">
+       
+	   <div ng-app="ParksApp">
+    
+    <div id="mainPic">
+        <img src="img/adventurehero.jpg" class="img-responsive" alt="Picture of Alapocas Run State Park">
+        <h1 id="mainPic">Your outdoor adventure starts here...</h1>
+    </div>
+
+    <div class="clearfix"></div><br />
+
+    <div ng-controller="MainController" id="cards">
+        <div class="container">
+            <div class="row">
+                <div ng-repeat="program in programs" class="col-sm-4">
+                    <img class="card img-responsive" ng-src="img/{{ program.photo }}" alt="{{ program.name }}" />
+                    <div class="container-sp card">
+                        <h1 class="home">{{ program.name }}</h1><br />
+                        <h4 class="home">{{ program.description }}<a ng-href="{{ program.page }}">{{ program.pageText }}</a></h4>
+                    </div><!--container-sp card-->
+
+                </div><!--col-sm-4-->
+            </div><!--row-->
+        </div><!--container cards-->
+    </div><!--MainController-->
+
+    <div class="container-sp space fade-sp">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <br /><img src="img/family.jpg" alt="Fun Family Pic" class="img-responsive" />
+                </div>
+                <div class="col-sm-5">
+                    <h1 class="white">Delaware Outdoor Families</h1>
+                    <p class="white">
+                        Have you ever camped under the stars, gone on a nighttime nature hike or caught a striped bass from the surf? Join us for a variety of activities in nature as you learn more about camping with the Delaware Outdoor Family program. All levels of experience are welcome, and first-time campers are encouraged to participate. Enjoy the outdoors with fellow Delaware Outdoor Families, and you will leave ready to plan your own camping adventures.<br /><br />
+
+                        Programs are held at various Delaware State Parks, and park staff will guide your family through the experience. Learn how to set up camp, pitch a tent, start a fire, cook outdoors, and much more!
+                    </p>
+                </div>
+            </div>
+        </div><br />
+    </div>
+
+    <div class="container">
+        <div class="row space">
+            <div class="col-sm-4">
+                <h1 class="green">What's new?</h1>
+                <!-- start feedwind code -->
+                <script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script>
+                <script type="text/javascript">(function () { var params = { rssmikle_url: "http://news.delaware.gov/category/dnrec/division-of-parks-and-recreation/", rssmikle_frame_width: "100%", rssmikle_frame_height: "500", frame_height_by_article: "0", rssmikle_target: "_blank", rssmikle_font: "Arial, Helvetica, sans-serif", rssmikle_font_size: "12", rssmikle_border: "off", responsive: "off", rssmikle_css_url: "", text_align: "left", text_align2: "left", corner: "off", scrollbar: "on", autoscroll: "off", scrolldirection: "up", scrollstep: "3", mcspeed: "20", sort: "New", rssmikle_title: "on", rssmikle_title_sentence: "The Latest News from DE State Parks", rssmikle_title_link: "", rssmikle_title_bgcolor: "#00599C", rssmikle_title_color: "#FFFFFF", rssmikle_title_bgimage: "", rssmikle_item_bgcolor: "#FFFFFF", rssmikle_item_bgimage: "", rssmikle_item_title_length: "70", rssmikle_item_title_color: "#00599C", rssmikle_item_border_bottom: "on", rssmikle_item_description: "on", item_link: "on", rssmikle_item_description_length: "100", rssmikle_item_description_color: "#666666", rssmikle_item_date: "gl1", rssmikle_timezone: "Etc/GMT", datetime_format: "%b %e, %Y %l:%M %p", item_description_style: "text", item_thumbnail: "full", item_thumbnail_selection: "auto", article_num: "15", rssmikle_item_podcast: "off", keyword_inc: "", keyword_exc: "" }; feedwind_show_widget_iframe(params); })();</script><div id="whats-new"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
+            </div>
+            <div class="col-sm-4">
+                <h1 class="green">Volunteer Spotlight</h1><br />
+                <img src="img/glen.jpg" alt="Pic of Glen" class="img-responsive" /><br /><br />
+                <p><strong>Glen Stubbolo</strong> is a pretty cool cat. He's the Chief of Volunteerism and always goes above and beyond to make the parks that much more special. <a href="#">Learn more about this amazing staff member</a>.</p><br /><br />
+            </div>
+            <div class="col-sm-4">
+                <h1 class="green">Connect</h1><br />
+                <a class="twitter-timeline" data-width="300" data-height="500" data-theme="light" data-link-color="#00599c" href="https://twitter.com/DEStateParks">Tweets by DEStateParks</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+        <div class="row space">
+            <div class="col-sm-6">
+                <img src="img/cards/findapark.jpg" alt="Find a Park" class="img-responsive" /><br /><br />
+            </div>
+            <div class="col-sm-6">
+                <img src="img/cards/GoldMedal.png" alt="Gold Medal" class="img-responsive" /><br /><br />
+            </div>
+            <div class="col-sm-6">
+                <img src="img/cards/find-a-campsite.png" alt="Find a Campsite" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <img src="img/cards/CottagesandMovie.png" alt="Cottage stay + movie tickets!" class="img-responsive" />
+            </div>
+        </div>
+
+    </div><!--container-->
+</div>
+	   
+	   
+    </div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-2">
+                    <a href="#" class="footer">About Us</a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="footer">Newsletter</a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="footer">Press Room</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" class="footer">FOIA Requests</a><br /><br />
+                </div>
+                <div class="col-sm-3 last">
+                    <a href="http://www.facebook.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/facebook.png"/>--><i class="fa fa-facebook-square fa-fw fa-lg"></i><span class="wave-text">Facebook</span></a>
+                    <a href="http://www.twitter.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/twitter.png"/>--> <i class="fa fa-twitter-square fa-fw fa-lg"></i><span class="wave-text">Twitter</span></a>
+                    <a href="http://www.instagram.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/instagram.png"/>--> <i class="fa fa-instagram fa-fw fa-lg"></i><span class="wave-text">Instagram</span></a>
+                    <a href="http://www.pinterest.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/pinterest.png"/>--> <i class="fa fa-pinterest-square fa-fw fa-lg"></i><span class="wave-text">Pinterest</span></a>
+                </div>
+
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--footer-->
+	
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- nav fixed after scroll -->
+    <script src="js/navControl.js"></script>
+	
+	<!-- bootstrap and jquery libs -->
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

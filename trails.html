@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trails - DE State Parks</title>
+    <meta name="description" content="Enjoy the natural diversity of Delaware's 17 state parks. From hiking, camping, swimming, and fishing, to nature programs and touring historic sites, there is truly something for everyone at Delaware State Parks!">
+    <meta name="author" content="The State of Delaware">
+    
+    
+	<link href="lib/bootstrap.min.css" rel="stylesheet" />
+	<link href="lib/DSPFonts.css" rel="stylesheet" />
+    <link href="css/de_parks_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    
+</head>
+<body>
+
+    
+
+    <div id="wrapper">
+        <a href="index.html"><img src="img/logo.png" alt="DE State Parks logo" /></a>
+    </div>
+
+    <div id="nav-wrapper">
+        <nav class="nav" id="nav" data-spy="affix" data-offset-top="">
+            <div class="container-fluid mainMenu">
+                <div class="row hidden-xs">
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Places To Go</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Reservations</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Adventures</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Events</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Get Involved</a>
+                    </div><!--col-sm-2-->
+                    <div class="col-sm-2">
+                        <a role="button" data-toggle="collapse" href="#collapseMainNav" aria-expanded="false" aria-controls="collapseMainNav" class="menu">Things to Know</a>
+                    </div><!--col-sm-2-->
+                </div><!--row hidden-xs-->
+            </div><!--container-fluid-->
+            <!-- BEGIN Fixed Main Nav Bar -->
+
+            <div class="collapse navInner hidden-xs" id="collapseMainNav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropParks" aria-k="true" aria-expanded="true">Find a Park <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropParks">
+
+                                    <li>Alapocas Run</li>
+                                    <li>Bellevue</li>
+                                    <li>Brandywine Creek</li>
+                                    <li><a href="park.html">Cape Henlopen</a></li>
+                                    <li>Delaware Seashore & Indian River Marina</li>
+                                    <li>Fenwick Island</li>
+                                    <li>First State Heritage Park</li>
+                                    <li>Fort Delaware</li>
+                                    <li>Fort DuPont</li>
+                                    <li>Fox Point</li>
+                                    <li>Holts Landing</li>
+                                    <li>Killens Pond</li>
+                                    <li>Lums Pond</li>
+                                    <li>Trap Pond</li>
+                                    <li>White Clay Creek</li>
+                                    <li>Wilmington State Parks</li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropAttraction" aria-haspopup="true" aria-expanded="true">Find an Attraction <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropAttraction">
+                                    <li><a href="#">Auburn Heights Preserve</a></li>
+                                    <li><a href="#">Brandywine Zoo</a></li>
+                                    <li><a href="#">Deerfield Golf & Tennis</a></li>
+                                    <li><a href="#">Fort Miles Historical Area</a></li>
+                                    <li><a href="#">Garrisons Lake Golf Course</a></li>
+                                    <li><a href="venue.html"><strong>Hammerheads Dockside</strong></a></li>
+                                    <li><a href="#">Indian River Life-Saving Station</a></li>
+                                    <li><a href="#">Killens Pond Water Park</a></li>
+                                    <li><a href="#">Port Penn Interpretive Center</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropTrail" aria-haspopup="true" aria-expanded="true">Find a Trail <i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropTrail">
+                                    <li><a href="trails.html"><strong>Trail Map</strong></a></li>
+                                    <li><a href="#">Trail Challenge Program</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropStay" aria-haspopup="true" aria-expanded="true">Places to Stay <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropStay">
+                                    <li><a href="#">Reservation Information</a></li>
+                                    <li><a href="#">RV &amp; Tent Camping</a></li>
+                                    <li><a href="#">Cabins</a></li>
+                                    <li><a href="#">Cottages at Indian River Marina</a></li>
+                                    <li><a href="#">Yurts</a></li>
+                                    <li><a href="#">Group Camping</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropMeetings" aria-haspopup="true" aria-expanded="true">Celebrations and Meetings <i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropMeetings">
+                                    <li><a href="#">Auburn Heights Preserve</a></li>
+                                    <li><a href="#">Baldcypress Nature Center</a></li>
+                                    <li><a href="#">Bellevue Hall</a></li>
+                                    <li><a href="#">Blue Ball Barn</a></li>
+                                    <li><a href="#">Cauffiel House</a></li>
+                                    <li><a href="#">Figure 8 Barn</a></li>
+                                    <li><a href="#">Grass Dale Center</a></li>
+                                    <li><a href="#">Indian River Life-Saving Station</a></li>
+                                    <li><a href="#">Judge Morris Estate</a></li>
+                                    <li><a href="#">Killens Pond Nature Center</a></li>
+                                    <li><a href="#">Mount Pleasant Meeting House</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Pavilions &amp; Picnic Areas</a><br />
+
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+                            <a href="#">Birding</a><br />
+                            <a href="#">Biking</a><br />
+                            <a href="#">Boating &amp; Marinas</a><br />
+                            <a href="#">Canoeing &amp; Kayaking</a><br />
+                            <a href="#">Climbing</a><br />
+                            <a href="#">Disc Golf</a><br />
+                            <a href="#">Fishing</a><br />
+                            <a href="#">Geocaching</a><br />
+                            <a href="#">Golf</a><br />
+                            <a href="#">Hiking</a><br />
+                            <a href="#">Horseback Riding</a><br />
+                            <a href="#">Hunting</a><br />
+                            <a href="#">Tennis</a><br />
+                            <a href="#">Ziplining</a><br /><br />
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+                            <a href="#"></a>
+                            <a href="programs.html"><strong>Find Events and Programs</strong></a><br />
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropPlay" aria-haspopup="true" aria-expanded="true">Learn &amp; Play<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropPlay">
+                                    <li><a href="#">Day Camps</a></li>
+                                    <li><a href="#">School Group Programs</a></li>
+                                    <li><a href="#">Scout Programs</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropFun" aria-haspopup="true" aria-expanded="true">Outdoor Family Fun<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropFun">
+                                    <li><a href="#">Delaware Outdoor Family</a></li>
+                                    <li><a href="#">Great Parks Pursuit</a></li>
+                                    <li><a href="#">Hayrides</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropConcerts" aria-haspopup="true" aria-expanded="true">Summer Concert Series<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropConcerts">
+                                    <li><a href="#">Bellevue</a></li>
+                                    <li><a href="#">Delaware Seashore</a></li>
+                                    <li><a href="#">Holts Landing</a></li>
+                                    <li><a href="#">Killens Pond</a></li>
+                                    <li><a href="#">Trap Pond</a></li>
+                                    <li><a href="#">White Clay Creek</a></li>
+                                    <li><a href="#">Wilmington</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Time Travelers</a><br />
+
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navBorder">
+                            <p>&nbsp;</p>
+
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropVolunteer" aria-haspopup="true" aria-expanded="true">Volunteer at a Park<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL" aria-labelledby="dropVolunteer">
+                                    <li><a href="#">Search Volunteer Opportunities</a></li>
+                                    <li><a href="#">Volunteer Hosting Program</a></li>
+                                    <li><a href="#">Veterans Conservation Corps</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Make a Donation</a><br />
+                            <a href="#">Apply for an Internship</a><br />
+                            <a href="#">Join a Friends Group</a><br />
+                            <a href="#">Become a Resident Curator</a><br />
+                            <a href="#">Sponsor an Event</a><br />
+                            <a href="#">Join Our Staff</a><br /><br />
+                            <a asp-area="" asp-controller="Form" asp-action="ProgramSubmission">Program Submission Form</a>
+
+                        </div><!--navBorder-->
+
+                        <div class="col-sm-2 navEnd">
+                            <p>&nbsp;</p>
+                            <a href="#">Contact Delaware State Parks</a><br />
+
+                            <div class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropGeneral" aria-haspopup="true" aria-expanded="true">General Information<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL pull-right" aria-labelledby="dropGeneral">
+                                    <li><a href="#">2016 Fee Schedule</a></li>
+                                    <li><a href="#">Beach Wheelchairs</a></li>
+                                    <li><a href="#">Carry-In, Carry-Out Trash Policy</a></li>
+                                    <li><a href="#">Current Park Improvement Projects</a></li>
+                                    <li><a href="#">Drones</a></li>
+                                    <li><a href="#">Passes &amp; Reduced-Cost Programs</a></li>
+                                    <li><a href="#">Pets in the Park</a></li>
+                                    <li><a href="#">Regulations</a></li>
+                                    <li><a href="#">Tobacco-Free Zones</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <div class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropResearch" aria-haspopup="true" aria-expanded="true">Park Research<i class="fa fa-caret-down fa-fw"></i></a><br />
+                                <ul class="dropdown-menu list-unstyled dropNavUL pull-right" aria-labelledby="dropResearch">
+                                    <li><a href="#">Oral History Archive</a></li>
+                                </ul>
+                            </div><!--dropdown-->
+
+                            <a href="#">Passes, Tags &amp; Fees</a><br />
+                            <a href="#">State Contracting Information</a><br /><br />
+                        </div><!--navEnd-->
+
+                    </div><!--row-->
+                </div><!--container-fluid-->
+            </div><!--collapseMainNav-->
+            <!-- END Fixed Main Nav Bar -->
+            <!-- BEGIN Fixed Mobile Nav Bar -->
+            <div class="navbar hidden-sm hidden-md hidden-lg navscroll nav-down">
+                <div class="container-fluid">
+                    <div class="navbar-header ">
+                        <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" id="simple-menu">
+                            <i class="fa fa-align-justify fa-fw fa-lg"></i>Menu
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse sidr" id="defaultNavbar1">
+
+                        <ul class="nav navbar-nav">
+                            <!--mobile main menu list-->
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapsePlaces" aria-expanded="false" aria-controls="collapsePlaces">Places To Go<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapsePlaces">
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseParks" aria-expanded="false" aria-controls="collapseParks">Find a Park<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseParks">
+                                            <li>Alapocas Run</li>
+											<li>Bellevue</li>
+											<li>Brandywine Creek</li>
+											<li><a href="park.html">Cape Henlopen</a></li>
+											<li>Delaware Seashore & Indian River Marina</li>
+											<li>Fenwick Island</li>
+											<li>First State Heritage Park</li>
+											<li>Fort Delaware</li>
+											<li>Fort DuPont</li>
+											<li>Fox Point</li>
+											<li>Holts Landing</li>
+											<li>Killens Pond</li>
+											<li>Lums Pond</li>
+											<li>Trap Pond</li>
+											<li>White Clay Creek</li>
+											<li>Wilmington State Parks</li>
+                                        </ul><!--collapseParks-->
+                                    </li><!--Find  a Park-->
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseAttractions" aria-expanded="false" aria-controls="collapseAttractions">State Park Attraction<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseAttractions">
+                                            <li><a href="#">Auburn Heights Preserve</a></li>
+											<li><a href="venue.html">Brandywine Zoo</a></li>
+											<li><a href="#">Deerfield Golf & Tennis</a></li>
+											<li><a href="#">Fort Miles Historical Area</a></li>
+											<li><a href="#">Garrisons Lake Golf Course</a></li>
+											<li><a href="#">Hammerheads Dockside</a></li>
+											<li><a href="#">Indian River Life-Saving Station</a></li>
+											<li><a href="#">Killens Pond Water Park</a></li>
+											<li><a href="#">Port Penn Interpretive Center</a></li>
+                                        </ul><!--collapseAttractions-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseTrails" aria-expanded="false" aria-controls="collapseTrails">Find a Trail<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseTrails">
+                                            <li><a href="trails.html">Trail Maps</a></li>
+                                            <li><a href="#">Trail Challenge Program</a></li>
+                                        </ul><!--collapseTrails-->
+                                    </li>
+                                </ul><!--collapsePlaces-->
+                            </li><!--Places to go-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseReservations" aria-expanded="false" aria-controls="collapseReservations">Reservations<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseReservations">
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseStay" aria-expanded="false" aria-controls="collapseStay">Places to Stay<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseStay">
+                                            <li><a href="#">Reservation Information</a></li>
+                                            <li><a href="#">RV and Tent Camping</a></li>
+                                            <li><a href="#">Cabins</a></li>
+                                            <li><a href="#">Cottages at Indian River Marina</a></li>
+                                            <li><a href="#">Yurts</a></li>
+                                            <li><a href="#">Group Camping</a></li>
+                                        </ul><!--collapseStay-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseMeetings" aria-expanded="false" aria-controls="collapseMeetings">Celebrations and Meetings<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseMeetings">
+                                            <li><a href="#">Auburn Heights Preserve</a></li>
+                                            <li><a href="#">Baldcypress Nature Center</a></li>
+                                            <li><a href="#">Bellevue Hall</a></li>
+                                            <li><a href="#">Blue Ball Barn</a></li>
+                                            <li><a href="#">Cauffiel House</a></li>
+                                            <li><a href="#">Figure 8 Barn</a></li>
+                                            <li><a href="#">Grass Dale Center</a></li>
+                                            <li><a href="#">Indian River Life-Saving Station</a></li>
+                                            <li><a href="#">Judge Morris Estate</a></li>
+                                            <li><a href="#">Killens Pond Nature Center</a></li>
+                                            <li><a href="#">Mount Pleasant Meeting House</a></li>
+                                        </ul><!--collapseMeetings-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapsePavilions" aria-expanded="false" aria-controls="collapsePavilions">Pavilions + Picnic Areas<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapsePavilions">
+                                            <li><a href="#">Alapocas Run State Park</a></li>
+                                            <li><a href="#">Bellevue State Park</a></li>
+                                            <li><a href="#">Brandywine Creek State Park</a></li>
+                                            <li><a href="park.html">Cape Henlopen State Park</a></li>
+                                            <li><a href="#">Delaware Seashore State Park</a></li>
+                                            <li><a href="#">Fenwick Island State Park</a></li>
+                                            <li><a href="#">Fort Delaware State Park</a></li>
+                                            <li><a href="#">Fort DuPont &amp; Port Penn</a></li>
+                                            <li><a href="#">Holts Landing State Park</a></li>
+                                            <li><a href="#">Killens Pond State Park</a></li>
+                                            <li><a href="#">Lums Pond State Park</a></li>
+                                            <li><a href="#">Trap Pond State Park</a></li>
+                                            <li><a href="#">White Clay Creek State Park</a></li>
+                                            <li><a href="#">Wilmington State Parks</a></li>
+                                        </ul><!--collapsePavilions-->
+                                    </li>
+                                </ul><!--collapseReservations-->
+                            </li><!--Reservations-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseAdventures" aria-expanded="false" aria-controls="collapseAdventures">Adventures<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseAdventures">
+                                    <li><a href="#">Birding</a></li>
+                                    <li><a href="#">Biking</a></li>
+                                    <li><a href="#">Boating &amp; Marinas</a></li>
+                                    <li><a href="#">Canoeing &amp; Kayaking</a></li>
+                                    <li><a href="#">Climbing</a></li>
+                                    <li><a href="#">Disc Golf</a></li>
+                                    <li><a href="#">Fishing</a></li>
+                                    <li><a href="#">Geocaching</a></li>
+                                    <li><a href="#">Golf</a></li>
+                                    <li><a href="#">Hiking</a></li>
+                                    <li><a href="#">Horseback Riding</a></li>
+                                    <li><a href="#">Hunting</a></li>
+                                    <li><a href="#">Tennis</a></li>
+                                    <li><a href="#">Ziplining</a></li>
+                                </ul><!--collapseAdventures-->
+                            </li><!--Adventures-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseEvents" aria-expanded="false" aria-controls="collapseEvents">Events<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseEvents">
+
+                                    <li><a href="programs.html">Find Events and Programs</a></li>
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseLearnPlay" aria-expanded="false" aria-controls="collapseLearnPlay">Learn &amp; Play<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseLearnPlay">
+                                            <li><a href="#">Day Camps</a></li>
+                                            <li><a href="#">School Group Programs</a></li>
+                                            <li><a href="#">Scout Programs</a></li>
+                                        </ul><!--collapseLearnPlay-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseOutdoorFun" aria-expanded="false" aria-controls="collapseOutdoorFun">Outdoor Family Fun<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseOutdoorFun">
+                                            <li><a href="#">Delaware Outdoor Family</a></li>
+                                            <li><a href="#">Great Parks Persuit</a></li>
+                                            <li><a href="#">Hayrides</a></li>
+                                        </ul><!--collapseLearnPlay-->
+                                    </li>
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseConcert" aria-expanded="false" aria-controls="collapseConcert">Summer Concert Series<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseConcert">
+                                            <li><a href="#">Bellevue</a></li>
+                                            <li><a href="#">Delaware Seashore</a></li>
+                                            <li><a href="#">Holts Landing</a></li>
+                                            <li><a href="#">Killens Pond</a></li>
+                                            <li><a href="#">Trap Pond</a></li>
+                                            <li><a href="#">White Clay Creek</a></li>
+                                            <li><a href="#">Wilmington</a></li>
+                                        </ul><!--collapseConcert-->
+                                    </li>
+                                    <li><a href="#">Time Travelers</a></li>
+                                </ul><!--collapseEvents-->
+                            </li><!--Events-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseGetInvolved" aria-expanded="false" aria-controls="collapseGetInvolved">Get Involved<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseGetInvolved">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseVolunteer" aria-expanded="false" aria-controls="collapseVolunteer">Volunteer at a Park<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseVolunteer">
+                                            <li><a href="#">Search Volunteer Opportunities</a></li>
+                                            <li><a href="#">Volunteer Hosting Program</a></li>
+                                            <li><a href="#">Veterans Conservation Corps</a></li>
+                                        </ul><!--collapse volunteer-->
+                                    </li>
+                                    <li><a href="#">Make a Donation</a></li>
+                                    <li><a href="#">Apply for an Internship</a></li>
+                                    <li><a href="#">Join a Friends Group</a></li>
+                                    <li><a href="#">Become a Resident Curator</a></li>
+                                    <li><a href="#">Sponsor an Event</a></li>
+                                    <li><a href="#">Join Our Staff</a></li>
+                                </ul><!--collapseGetInvolved-->
+                            </li><!--Get Involved-->
+
+                            <li>
+                                <a role="button" data-toggle="collapse" href="#collapseKnow" aria-expanded="false" aria-controls="collapseKnow">Things to Know<i class="fa fa-caret-down fa-fw"></i></a>
+                                <ul class="collapse" id="collapseKnow">
+                                    <li><a href="#">Contact Delaware State Parks</a></li>
+
+                                    <li>
+                                        <a role="button" data-toggle="collapse" href="#collapseGeneralInfo" aria-expanded="false" aria-controls="collapseGeneralInfo">General Information<i class="fa fa-caret-down fa-fw"></i></a>
+                                        <ul class="collapse dropNavUL" id="collapseGeneralInfo">
+                                            <li><a href="#">2017 Fee Schedule</a></li>
+                                            <li><a href="#">Beach Wheelchairs</a></li>
+                                            <li><a href="#">Carry-In, Carry-Out Trash Policy</a></li>
+                                            <li><a href="#">Current Park Improvement Projects</a></li>
+                                            <li><a href="#">Drones</a></li>
+                                            <li><a href="#">Passes &amp; Reduced Cost Programs</a></li>
+                                            <li><a href="#">Pets in the Park</a></li>
+                                            <li><a href="#">Regulations</a></li>
+                                            <li><a href="#">Tobacco-Free Zones</a></li>
+                                        </ul><!--collapseGeneralInfo-->
+                                    </li>
+                                    <li><a href="#">Park Research</a></li>
+                                    <li><a href="#">Passes, Tags and Fees</a></li>
+                                    <li><a href="#">State Contracting Information</a></li>
+                                </ul><!--collapseKnow-->
+                            </li><!--Things to Know-->
+
+                        </ul><!--mobile main menu list-->
+                    </div><!--sidr-->
+                </div>
+            </div>
+            <!-- END Fixed Mobile Nav Bar -->
+        </nav>
+    </div><!--nav-wrapper-->
+
+    <div class="body-content">
+        
+		<style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        height: 800px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+    }
+</style>
+
+
+<div class="clearfix"></div><br /><br /><br />
+<!-- END Hero image -->
+<!-- BEGIN Container -->
+<section id="page" class="flexbox-container">
+
+    <!-- BEGIN main -->
+    
+    <div class="main">
+        <br />
+        <div id="parkMap">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbdqN158zVMbwrxAC0yBJygkn6EygykOs"> </script>
+            
+
+
+
+            <div class="col-lg-12">
+                <div id="floating-panel">
+                    <input type="checkbox" name="category" value="Hiking" onclick="displayMarkers(this, 1);">
+                    <label for="category_1">Hiking</label>
+                    <input type="checkbox" name="category" value="Biking" onclick="displayMarkers(this, 2);">
+                    <label for="category_2">Biking (and hiking)</label>
+                    <input type="checkbox" name="category" value="Equestrian" onclick="displayMarkers(this, 3);">
+                    <label for="category_3">Equestrian (and hiking)</label>
+                    <input type="checkbox" name="category" value="Water" onclick="displayMarkers(this, 4);">
+                    <label for="category_4">Water</label>
+                    <input type="checkbox" name="category" value="Yes" onclick="showMarkers(this, 9);">
+                    <label for="category_5">Accessible</label>
+                </div>
+                <div id="map"></div>
+            </div>
+
+            <script type="text/javascript">
+
+
+                var locations = [
+                    ['<img src="~wwwroot/images/map/ARSPmap.jpg" width="100" height="100" alt="Alapocas Run State Park - Climbing Wall"/><p><a href="#">Alapocas Run State Park</a></p><p>1914 W Park Dr<br> Wilmington, DE 19803<br>Alapocas Woods</p>', 39.773758, -75.565835, 1, 8],
+                    ['<img src="~wwwroot/images/map/ARSPmap.jpg" width="100" height="100" alt="Alapocas Run State Park - Climbing Wall"/><p><a href="#">Alapocas Run State Park</a></p><p>1914 W Park Dr<br> Wilmington, DE 19803<br>Pawpaw Loop</p>', 39.772280, -75.565182, 1, 8],
+                    ['<img src="~wwwroot/images/map/ARSPmap.jpg" width="100" height="100" alt="Alapocas Run State Park - Climbing Wall"/><p><a href="#">Alapocas Run State Park</a></p><p>1914 W Park Dr<br> Wilmington, DE 19803<br>Northern Delaware Greenway</p>', 39.770754, -75.557597, 2, 9],
+                    ['<img src="~wwwroot/images/map/ARSPmap.jpg" width="100" height="100" alt="Alapocas Run State Park - Climbing Wall"/><p><a href="#">Alapocas Run State Park</a></p><p>1914 W Park Dr<br> Wilmington, DE 19803<br>Northern Delaware Greenway</p>', 39.808565, -75.681854, 1, 9],
+                    ['<img src="~wwwroot/images/map/AHPmap.jpg" width="100" height="100" alt="Auburn Heights Preserve"/><p><a href="#">Auburn Heights Preserve</a></p><p>Hockessin, DE 19707<br>Trolley Trail</p>', 39.807890, -75.681021, 1, 8],
+                    ['<img src="~wwwroot/images/map/AHPmap.jpg" width="100" height="100" alt="Auburn Heights Preserve"/><p><a href="#">Auburn Heights Preserve</a></p><p>Hockessin, DE 19707<br>Auburn Heights Trail</p>', 39.808548, -75.681741, 2, 8],
+                    ['<img src="~wwwroot/images/map/BVSPmap.jpg" width="100" height="100" alt="Bellevue State Park"/><p><a href="#">Bellevue State Park</a></p><p>800 Carr Rd.<br> Wilmington, DE 19809<br>Northern Delaware Greenway</p>', 39.777833, -75.504202, 3, 9],
+                    ['<img src="~wwwroot/images/map/BVSPmap.jpg" width="100" height="100" alt="Bellevue State Park"/><p><a href="#">Bellevue State Park</a></p><p>800 Carr Rd.<br> Wilmington, DE 19809<br>Equestrian</p>', 39.779647, -75.503269, 3, 8],
+                    ['<img src="~wwwroot/images/map/BVSPmap.jpg" width="100" height="100" alt="Bellevue State Park"/><p><a href="#">Bellevue State Park</a></p><p>800 Carr Rd.<br> Wilmington, DE 19809<br>Nature Preserve</p>', 39.780048, -75.501955, 1, 8],
+                    ['<img src="~wwwroot/images/map/BVSPmap.jpg" width="100" height="100" alt="Bellevue State Park"/><p><a href="#">Bellevue State Park</a></p><p>800 Carr Rd.<br> Wilmington, DE 19809<br>Oval Track</p>', 39.777212, -75.503725, 2, 9],
+                    ['<img src="~wwwroot/images/map/BCSPmap.jpg" width="100" height="100" alt="Brandywine Creek"/><p><a href="#"Indian Springs</a></p><p>41 Adams Dam Road<br>Wilmington, DE 19807<br>Indian Springs</p>', 39.809542, -75.576390, 1, 8],
+                    ['<img src="~wwwroot/images/map/BCSPmap.jpg" width="100" height="100" alt="Brandywine Creek"/><p><a href="#">Brandywine Creek State Park</a></p><p>41 Adams Dam Road<br>Wilmington, DE 19807<br>Rocky Run</p>', 39.816096, -75.568543, 1, 9],
+                    ['<img src="~wwwroot/images/map/BCSPmap.jpg" width="100" height="100" alt="Brandywine Creek"/><p><a href="#">Brandywine Creek State Park</a></p><p>41 Adams Dam Road<br>Wilmington, DE 19807<br>Hidden Pond</p>', 39.809668, -75.576638, 1, 8],
+                    ['<img src="~wwwroot/images/map/BCSPmap.jpg" width="100" height="100" alt="Brandywine Creek"/><p><a href="#">Brandywine Creek State Park</a></p><p>41 Adams Dam Road<br>Wilmington, DE 19807<br>Brandywine Trail</p>', 39.797970, -75.573159, 2, 9],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Beach</p>', 38.792900, -75.088057, 3, 8],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Pinelands</p>', 38.783186, -75.098678, 1, 8],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Seaside Nature</p>', 38.784541, -75.098131, 1, 8],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Walking Dunes</p>', 38.765794, -75.084781, 2, 8],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Salt Marsh Spur</p>', 38.771574, -75.088818, 2, 8],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Bike Loop</p>', 38.782606, -75.101113, 2, 9],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Gordons Pond</p>', 38.742526, -75.082271, 2, 8],
+                    ['<img src="~wwwroot/images/map/CHSPmap.jpg" width="100" height="100" alt="Cape Henlopen"/><p><a href="#">Cape Henlopen State Park</a></p><p>15099 Cape Henlopen Dr<br>Lewes, DE 19958<br>Junction and Breakwater</p>', 38.719980, -75.111376, 1, 9],
+                    ['<img src="~wwwroot/images/map/DSSPmap.jpg" width="100" height="100" alt="Delaware Seashore"/><p><a href="#">Delaware Seashore State Park</a></p><p>7 Town Rd<br>Ocean View, DE 19970<br>Assawoman Canal Trail</p>', 38.544060, -75.082195, 2, 9],
+                    ['<img src="~wwwroot/images/map/DSSPmap.jpg" width="100" height="100" alt="Delaware Seashore"/><p><a href="#">Delaware Seashore State Park</a></p><p>Rd 50D<br>Rehoboth Beach, DE 19971<br>Beach Area</p>', 38.648931, -75.067286, 3, 8],
+                    ['<img src="~wwwroot/images/map/DSSPmap.jpg" width="100" height="100" alt="Delaware Seashore"/><p><a href="#">Delaware Seashore State Park</a></p><p>39401 Inlet Rd<br>Rehoboth Beach, DE 19971<br>Burton Island</p>', 38.616016, -75.072807, 1, 8],
+                    ['<img src="~wwwroot/images/map/DSSPmap.jpg" width="100" height="100" alt="Delaware Seashore"/><p><a href="#">Delaware Seashore State Park</a></p><p>Fred Hudson Rd<br>Bethany Beach, DE 19930<br>Fred Hudson Road Trail</p>', 38.555779, -75.070954, 3, 9],
+                    ['<img src="~wwwroot/images/map/DSSPmap.jpg" width="100" height="100" alt="Delaware Seashore"/><p><a href="#">Delaware Seashore State Park</a></p><p>Hickman Rd<br>Ocean View, DE 19970<br>Prickly Pear</p>', 38.563605, -75.072479, 3, 9],
+                    ['<img src="~wwwroot/images/map/DSSPmap.jpg" width="100" height="100" alt="Delaware Seashore"/><p><a href="#">Delaware Seashore State Park</a></p><p>Rehoboth Beach, DE 19971<br>Thompson Island</p>', 38.698183, -75.091117, 1, 9],
+                    ['<img src="~wwwroot/images/map/FISPmap.jpg" width="100" height="100" alt="Fenwick Island"/><p><a href="#">Fenwick Island State Park</a></p><p>24 Ocean Park Ln<br>Fenwick Island, DE 19944<br>Beach Area</p>', 38.475094, -75.049737, 3, 8],
+                    ['<img src="~wwwroot/images/map/FDSPmap.jpg" width="100" height="100" alt="Fort Delaware"/><p><a href="#">Fort Delaware State Park</a></p><p>New Castle County DE<br>Prison Camp</p>', 39.590176, -75.567341, 1, 8],
+                    ['<img src="~wwwroot/images/map/FDSPmap.jpg" width="100" height="100" alt="Fort DuPont"/><p><a href="#">Fort Delaware State Park</a></p><p>New Castle County DE<br>River View</p>', 39.572745, -75.581694, 1, 8],
+                    ['<img src="~wwwroot/images/map/PPSPmap.jpg" width="100" height="100" alt="Port Penn"/><p><a href="#">Port Penn State Park</a></p><p>5 Port Penn Rd<br>Middletown, DE 19709<br>Port Penn</p>', 39.517371, -75.579517, 1, 8],
+                    ['<img src="~wwwroot/images/map/FPSPmap.jpg" width="100" height="100" alt="Fox Point"/><p><a href="#">Fox Point State Park</a></p><p>Hay Road<br>Wilmington, DE 19809<br>Northern Delaware Greenway</p>', 39.757773, -75.488583, 2, 9],
+                    ['<img src="~wwwroot/images/map/FPSPmap.jpg" width="100" height="100" alt="Fox Point"/><p><a href="#">Fox Point State Park</a></p><p>Hay Road<br>Wilmington, DE 19809<br>Riverview</p>', 39.757773, -75.488583, 2, 9],
+                    ['<img src="~wwwroot/images/map/HLSPmap.jpg" width="100" height="100" alt="Holts Landing"/><p><a href="#">Holts Landing State Park</a></p><p>39415 Inlet Rd<br>Dagsboro, DE 19939<br>Sea Hawk</p>', 38.590402, -75.128235, 1, 8],
+                    ['<img src="~wwwroot/images/map/HLSPmap.jpg" width="100" height="100" alt="Holts Landing"/><p><a href="#">Holts Landing State Park</a></p><p>39415 Inlet Rd<br>Dagsboro, DE 19939<br>Seahorse</p>', 38.588011, -75.133618, 3, 9],
+                    ['<img src="~wwwroot/images/map/KPSPmap.jpg" width="100" height="100" alt="Killens Pond"/><p><a href="#">Killens Pond State Park</a></p><p>5025 Killens Pond Rd<br>Felton, DE 19943<br>Bike</p>', 38.987210, -75.539363, 2, 9],
+                    ['<img src="~wwwroot/images/map/KPSPmap.jpg" width="100" height="100" alt="Killens Pond"/><p><a href="#">Killens Pond State Park</a></p><p>5025 Killens Pond Rd<br>Felton, DE 19943<br>Pondside</p>', 38.983889, -75.537532, 1, 9],
+                    ['<img src="~wwwroot/images/map/KPSPmap.jpg" width="100" height="100" alt="Killens Pond"/><p><a href="#">Killens Pond State Park</a></p><p>5025 Killens Pond Rd<br>Felton, DE 19943<br>Cross Country</p>', 38.985168, -75.544992, 1, 8],
+                    ['<img src="~wwwroot/images/map/KPSPmap.jpg" width="100" height="100" alt="Killens Pond"/><p><a href="#">Killens Pond State Park</a></p><p>5025 Killens Pond Rd<br>Felton, DE 19943<br>Life Course</p>', 38.986027, -75.546752, 1, 9],
+                    ['<img src="~wwwroot/images/map/LPSPmap.jpg" width="100" height="100" alt="Lums Pond"/><p><a href="#">Lums Pond State Park</a></p><p>3355 Red Lion Rd<br>Bear, DE 19701<br>Little Jersey</p>', 39.565662, -75.729904, 3, 8],
+                    ['<img src="~wwwroot/images/map/LPSPmap.jpg" width="100" height="100" alt="Lums Pond"/><p><a href="#">Lums Pond State Park</a></p><p>3355 Red Lion Rd<br>Bear, DE 19701<br>Swamp Forest</p>', 39.565662, -75.729904, 1, 9],
+                    ['<img src="~wwwroot/images/map/LPSPmap.jpg" width="100" height="100" alt="Lums Pond"/><p><a href="#">Lums Pond State Park</a></p><p>3355 Red Lion Rd<br>Bear, DE 19701<br>Sensory Loop</p>', 39.563213, -75.729028, 1, 9],
+                    ['<img src="~wwwroot/images/map/LPSPmap.jpg" width="100" height="100" alt="Lums Pond"/><p><a href="#">Lums Pond State Park</a></p><p>3355 Red Lion Rd<br>Bear, DE 19701<br>Life Course</p>', 39.561550, -75.724533, 1, 8],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>American Holly</p>', 38.522926, -75.480642, 2, 9],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>Bob</p>', 38.523178, -75.475052, 3, 9],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>Cypress Point</p>', 38.524603, -75.470286, 1, 9],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>Huckleberry</p>', 38.523105, -75.478508, 3, 8],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>Island</p>', 38.524662, -75.477066, 1, 9],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>Terrapin Branch Water</p>', 38.520380, -75.462138, 4, 8],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>Racoon Pond Water</p>', 38.519473, -75.463619, 4, 8],
+                    ['<img src="~wwwroot/images/map/TPSPmap.jpg" width="100" height="100" alt="Trap Pond"/><p><a href="#">Trap Pond State Park</a></p><p>33587 Baldcypress Lane<br>Laurel, DE 19956<br>James Branch Water</p>', 38.520774, -75.470110, 4, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Millstone</p>', 39.714186, -75.767161, 1, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Twin Valley</p>', 39.714293, -75.766936, 1, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>David English</p>', 39.733327, -75.756913, 2, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Whitely Farms</p>', 39.725288, -75.743451, 2, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Bryans Field</p>', 39.725243, -75.736140, 2, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Boundary Line</p>', 39.739627, -75.757258, 2, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Chestnut Hill</p>', 39.705949, -75.708955, 2, 8],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Pomeroy</p>', 39.704428, -75.756253, 2, 9, ],
+                    ['<img src="~wwwroot/images/map/WCCSPmap.jpg" width="100" height="100" alt="White Clay Creek"/><p><a href="#">White Clay Creek State Park</a></p><p>880 New London Rd<br>Newark, DE 19711<br>Tri-Valley</p>', 39.714748, -75.758267, 2, 8],
+                    ['<img src="~wwwroot/images/map/WSPBPmap.jpg" width="100" height="100" alt="Brandywine Park"/><p><a href="#">Wilmington State Parks - Brandywine Park</a></p><p>1080 N Park Dr<br>Wilmington, DE 19802<br>Northern Delaware Greenway</p>', 39.756546, -75.551069, 2, 9]
+                ];
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 8,
+                    center: new google.maps.LatLng(39.158368, -75.520299),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                var markers = [];
+                var infowindow = new google.maps.InfoWindow();
+                var i, newMarker;
+
+                for (i = 0; i < locations.length; i++) {
+                    newMarker = new google.maps.Marker({
+                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        map: map,
+                    });
+
+                    google.maps.event.addListener(newMarker, 'click', (function (newMarker, i) {
+                        return function () {
+                            infowindow.setContent(locations[i][0]);
+                            infowindow.open(map, newMarker);
+                        }
+                    })(newMarker, i));
+
+                    newMarker.category = locations[i][3];
+                    newMarker.accessibility = locations[i][4];
+                    newMarker.setVisible(false);
+
+                    markers.push(newMarker);
+                }
+
+
+                function displayMarkers(obj, category) {
+                    var i;
+
+                    for (i = 0; i < markers.length; i++) {
+                        if (markers[i].category === category) {
+                            if ($(obj).is(":checked")) {
+                                markers[i].setVisible(true);
+                            } else {
+                                markers[i].setVisible(false);
+                            }
+                        }
+                    }
+                }
+
+                function showMarkers(obj, accessibility) {
+                    var i;
+
+                    for (i = 0; i < markers.length; i++) {
+                        if (markers[i].accessibility === accessibility) {
+                            if ($(obj).is(":checked")) {
+
+                                markers[i].setVisible(true);
+                            } else {
+                                markers[i].setVisible(false);
+                            }
+                        }
+                    }
+                }
+
+                var styledMapType = new google.maps.StyledMapType(
+            [
+              { elementType: 'geometry', stylers: [{ color: '#ebe3cd' }] },
+              { elementType: 'labels.text.fill', stylers: [{ color: '#523735' }] },
+              { elementType: 'labels.text.stroke', stylers: [{ color: '#f5f1e6' }] },
+              {
+                  featureType: 'administrative',
+                  elementType: 'geometry.stroke',
+                  stylers: [{ color: '#c9b2a6' }]
+              },
+			  {
+			      featureType: 'administrative.land_parcel',
+			      elementType: 'geometry.stroke',
+			      stylers: [{ color: '#D6C499' }]
+			  },
+              {
+                  featureType: 'administrative.land_parcel',
+                  elementType: 'labels.text.fill',
+                  stylers: [{ color: '#ffffff' }]
+              },
+			  {
+			      featureType: 'administrative.city',
+			      elementType: 'geometry.fill',
+			      stylers: [{ color: '#D6C499' }]
+			  },
+              {
+                  featureType: 'landscape.natural',
+                  elementType: 'geometry',
+                  stylers: [{ color: '#ffffff' }]
+              },
+			  {
+			      featureType: 'poi.park',
+			      elementType: 'geometry.fill',
+			      stylers: [{ color: '#5AB947' }]
+			  },
+              {
+                  featureType: 'poi.park',
+                  elementType: 'labels.text.fill',
+                  stylers: [{ color: '#f98611' }]
+              },
+              {
+                  featureType: 'road',
+                  elementType: 'geometry',
+                  stylers: [{ color: '#8B5E3A' }]
+              },
+              {
+                  featureType: 'road.arterial',
+                  elementType: 'geometry',
+                  stylers: [{ color: '#8B5E3A' }]
+              },
+
+              {
+                  featureType: 'road.highway.controlled_access',
+                  elementType: 'geometry',
+                  stylers: [{ color: '#8B5E3A' }]
+              },
+              {
+                  featureType: 'road.highway.controlled_access',
+                  elementType: 'geometry.stroke',
+                  stylers: [{ color: '#8B5E3A' }]
+              },
+              {
+                  featureType: 'road.local',
+                  elementType: 'labels.text.fill',
+                  stylers: [{ color: '#1142a3' }]
+              },
+              {
+                  featureType: 'water',
+                  elementType: 'geometry.fill',
+                  stylers: [{ color: '#00599C' }, { "saturation": 50 }]
+              },
+              {
+                  featureType: 'water',
+                  elementType: 'labels.text.fill',
+                  stylers: [{ color: '#92998d' }]
+              }
+            ],
+            { name: 'Styled Map' });
+
+                map.mapTypes.set('styled_map', styledMapType);
+                map.setMapTypeId('styled_map');
+
+            </script>
+        </div>
+            <br>
+
+            <!-- Begin Map -->
+			<script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+            <script>
+                String.prototype.replaceAll = function(search, replacement) {
+			var target = this;
+			return target.replace(new RegExp(search, 'g'), replacement);
+		};
+
+		$(document).ready(function() {
+			var ddlFilterTableRow = $('select.ddlFilterTableRow'),
+				headerCount = $('#headerCount');
+			headerCount.html($('#parkProgram').find('.Row').length + ' Programs');
+
+			ddlFilterTableRow.on('change', function() {
+				ddlFilterTableRow.attr('disabled', 'disabled');
+
+				var records = $('#parkProgram').find('.Row');
+				records.hide();
+
+				var critriaAttributes = [];
+				ddlFilterTableRow.each(function() {
+					var $this = $(this),
+						$selectedLength = $this.find(':selected').length,
+						$critriaAttribute = '';
+
+					if ($selectedLength > 0 && $this.val() != '0') {
+						if ($selectedLength == 1) {
+							$critriaAttribute += '[data-' + $this.data('attribute') + '*="' + $this.val() + '"]';
+						} else {
+							var $startDataAttribute = '[data-' + $this.data('attribute') + '*="',
+								$endDataAttribute = '"]',
+								$selectedValues = $this.val().toString();
+
+							$critriaAttribute += $startDataAttribute + $selectedValues.replaceAll(',', ($endDataAttribute + ',' + $startDataAttribute)) + $endDataAttribute;
+						}
+						critriaAttributes.push($critriaAttribute);
+					}
+				});
+
+				var $showRecords = records;
+				if (critriaAttributes.length > 0) {
+					$.each(critriaAttributes, function(i, filterValue) {
+						$showRecords = $showRecords.filter(filterValue);
+					});
+				}
+				$showRecords.show();
+
+				headerCount.html($showRecords.length + ' Programs');
+
+				ddlFilterTableRow.removeAttr('disabled');
+			});
+		});
+            </script>
+            <div id="parkMap">
+                <form class="col-sm-12">
+                    <h1>Find Things To Do</h1>
+                    <div class="form-group ">
+                        <label for="type">Choose a Trail Type</label>
+                        <select class="form-control ddlFilterTableRow" id="ddlRegion" data-attribute="region">
+                            <option value="Hiking">Hiking</option>
+                            <option value="Biking">Biking</option>
+                            <option value="Equestrian">Equestrian</option>
+                            <option value="Water">Water</option>
+                        </select>
+                    </div>
+                    <div class="form-group ">
+                        <label for="acc">Accessibility</label>
+                        <select class="form-control ddlFilterTableRow" id="ddlCategory" data-attribute="category">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                </form>
+                <table class=" table table-hover" id="parkProgram" summary="Delaware State Parks Trails List">
+                    <thead>
+                        <tr>
+                            <th>Park</th>
+                            <th colspan="2">Trail</th>
+                            <th>Type of Trail</th>
+                            <th>Miles</th>
+                            <th>Ease</th>
+                            <th>Accessible</th>
+                            <th>Trail Challenge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Alapocas Run</a></td>
+                            <td colspan="2">Alapocas Woods</a></td>
+                            <td>Hiking</td>
+                            <td>0.7 </td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Alapocas Run</a></td>
+                            <td colspan="2">PawPaw</td>
+                            <td class="col3">Hiking</td>
+                            <td>0.3</td>
+                            <td>Easy</td>
+                            <td class="col6">No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Alapocas Run</a></td>
+                            <td colspan="2">Northern Delaware Greenway</td>
+                            <td>Hiking, Biking</td>
+                            <td>2.0</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">Auburn Heights Preserve</a></td>
+                            <td colspan="2">Auburn Heights Trail</td>
+                            <td>Hiking, Biking, Steam Car</td>
+                            <td>1.3</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">Auburn Heights Preserve</a></td>
+                            <td colspan="2">Trolley Trail</td>
+                            <td>Hiking, Biking</td>
+                            <td>0.5</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Bellevue</a> </td>
+                            <td colspan="2">Northern Delaware Greenway</td>
+                            <td>Hiking, Biking</td>
+                            <td>1.6</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Equestrian" data-category="No">
+                            <td><a href="#">Bellevue</a> </td>
+                            <td colspan="2">Equestrian</td>
+                            <td>Hiking, Equestrian</td>
+                            <td>2.7</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Bellevue</a> </td>
+                            <td colspan="2">Nature Preserve</td>
+                            <td>Hiking</td>
+                            <td>1.5</td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Bellevue</a> </td>
+                            <td colspan="2">Oval Track</td>
+                            <td>Hiking, Biking</td>
+                            <td>1.2</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Brandywine Creek</a></></td>
+                            <td colspan="2">Indian Springs</a></td>
+                            <td>Hiking</td>
+                            <td>1.8</td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="Yes">
+                            <td><a href="#">Brandywine Creek</a></></td>
+                            <td colspan="2">Rocky Run</td>
+                            <td>Hiking</td>
+                            <td>2.0</td>
+                            <td>Moderate</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Brandywine Creek</a></></td>
+                            <td colspan="2">Hidden Pond</td>
+                            <td>Hiking</td>
+                            <td>2.8</td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Brandywine Creek</a></></td>
+                            <td colspan="2">Brandywine Trail </a><em>(formerly Northern Delaware Greenway)</em></td>
+                            <td>Hiking, Biking</td>
+                            <td>2.9</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Equestrian" data-category="No">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Beach</td>
+                            <td class="col3">Hiking, Equestrian</td>
+                            <td>4.6</td>
+                            <td>Easy to Moderate</td>
+                            <td class="col6">No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Pinelands</td>
+                            <td class="col3">Hiking</td>
+                            <td>2.0</td>
+                            <td>Easy</td>
+                            <td class="col6">No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Seaside Nature</td>
+                            <td>Hiking</td>
+                            <td>0.6</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Walking Dunes</td>
+                            <td>Hiking, Biking</td>
+                            <td>2.5</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Salt Marsh Spur</td>
+                            <td>Hiking, Biking</td>
+                            <td>0.6</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Bike Loop</td>
+                            <td>Hiking, Biking</td>
+                            <td>3.0</td>
+                            <td>Easy to Moderate</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Gordons Pond</td>
+                            <td>Hiking, Biking</td>
+                            <td>3.2</td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Cape Henlopen</a> </td>
+                            <td colspan="2">Junction and Breakwater</td>
+                            <td>Hiking, Biking</td>
+                            <td>5.0</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Delaware Seashore</a></td>
+                            <td colspan="2">Assawoman Canal Trail</td>
+                            <td>Hiking, Biking</td>
+                            <td>1.0</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Equestrian" data-category="No">
+                            <td><a href="#">Delaware Seashore</a></td>
+                            <td colspan="2">Beach Area</td>
+                            <td>Hiking, Equestrian</td>
+                            <td>4.6</td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Delaware Seashore</a></td>
+                            <td colspan="2">Burton Island</td>
+                            <td>Hiking</td>
+                            <td>1.5</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking,Equestrain" data-category="Yes">
+                            <td><a href="#">Delaware Seashore</a></td>
+                            <td colspan="2">Fred Hudson Road Trail</td>
+                            <td>Hiking, Biking, Equestrian</td>
+                            <td>1.0</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking,Equestrain" data-category="Yes">
+                            <td><a href="#">Delaware Seashore</a></td>
+                            <td colspan="2">Prickly Pear</td>
+                            <td>Hiking, Biking, Equestrian</td>
+                            <td>3.5</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="Yes">
+                            <td><a href="#">Delaware Seashore</a></td>
+                            <td colspan="2">Thompson Island</td>
+                            <td>Hiking</td>
+                            <td>0.7</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Equestrain" data-category="No">
+                            <td><a href="#">Fenwick Island</a> </td>
+                            <td colspan="2">Beach Area</td>
+                            <td>Hiking, Equestrian</td>
+                            <td>2.6</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Fort Delaware</a></td>
+                            <td colspan="2">Prison Camp</td>
+                            <td>Hiking</td>
+                            <td>0.6</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td> <a href="#">Fort Dupont</a> </td>
+                            <td colspan="2">River View</td>
+                            <td>Hiking</td>
+                            <td>1.1</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Port Penn</a></td>
+                            <td colspan="2">Port Penn</td>
+                            <td>Hiking</td>
+                            <td>0.9</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Fox Point</a> </td>
+                            <td colspan="2">Northern Delaware Greenway</td>
+                            <td>Hiking, Biking</td>
+                            <td>1.3</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Fox Point</a> </td>
+                            <td colspan="2">Riverview</td>
+                            <td>Hiking, Biking</td>
+                            <td>0.7</td>
+                            <td>&nbsp;</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td> <a href="#">Holts Landing</a> </td>
+                            <td colspan="2">Sea Hawk</td>
+                            <td>Hiking</td>
+                            <td>1.5</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking,Equestrain" data-category="Yes">
+                            <td> <a href="#">Holts Landing</a> </td>
+                            <td colspan="2"><a href="#">Seahorse</a></td>
+                            <td>Hiking, Biking, Equestrian</td>
+                            <td>1.2</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Killens Pond</a></td>
+                            <td colspan="2">Bike</a></td>
+                            <td class="col3">Hiking, Biking</td>
+                            <td>2.0</td>
+                            <td>Easy</td>
+                            <td class="col6">Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="Yes">
+                            <td><a href="#">Killens Pond</a></td>
+                            <td colspan="2">Pondside</a></td>
+                            <td>Hiking</td>
+                            <td>2.6</td>
+                            <td>Easy to Moderate</td>
+                            <td>Yes<a href="#Partial">**</a></td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Killens Pond</a></td>
+                            <td colspan="2">Cross Country</td>
+                            <td>Hiking</td>
+                            <td>3.1</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Killens Pond</a></td>
+                            <td colspan="2">Life Course</td>
+                            <td>Hiking</td>
+                            <td>0.8</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking,Equestrain" data-category="No">
+                            <td><a href="#">Lums Pond</a> </td>
+                            <td colspan="2">Little Jersey</td>
+                            <td>Hiking, Biking, Equestrian</td>
+                            <td>8.1</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="Yes">
+                            <td><a href="#">Lums Pond</a> </td>
+                            <td colspan="2">Swamp Forest</td>
+                            <td>Hiking</td>
+                            <td>6.8</td>
+                            <td>Easy</td>
+                            <td>Yes<a href="#Partial">**</a></td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="Yes">
+                            <td><a href="#">Lums Pond</a> </td>
+                            <td colspan="2">Sensory Loop</td>
+                            <td>Hiking</td>
+                            <td>0.1</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Lums Pond</a> </td>
+                            <td colspan="2">Life Course</td>
+                            <td>Hiking</td>
+                            <td>0.8</td>
+                            <td>Easy</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">American Holly</td>
+                            <td>Hiking, Biking</td>
+                            <td>0.7</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking,Equestrain" data-category="Yes">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">Bob</td>
+                            <td>Hiking, Biking, Equestrian</td>
+                            <td>4.6</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="Yes">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">Cypress Point</td>
+                            <td>Hiking</td>
+                            <td>1.0</td>
+                            <td>Easy</td>
+                            <td>Yes<a href="#Partial">**</a></td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Equestrian" data-category="No">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">Huckleberry</td>
+                            <td>Hiking, Equestrian</td>
+                            <td>1.8</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">Island</td>
+                            <td>Hiking</td>
+                            <td>0.6</td>
+                            <td>Easy</td>
+                            <td>Yes<a href="#Partial">**</a></td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Water" data-category="No">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">Terrapin Branch Water</td>
+                            <td >Canoe, Kayak</td>
+                            <td>1.4</td>
+                            <td>Medium</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Water" data-category="No">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">Racoon Pond Water</td>
+                            <td>Canoe, Kayak</td>
+                            <td>1.0</td>
+                            <td>Medium</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Water" data-category="No">
+                            <td><a href="#">Trap Pond</a></td>
+                            <td colspan="2">James Branch Water</td>
+                            <td>Canoe, Kayak</td>
+                            <td>6.5</td>
+                            <td>Advanced</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Millstone</td>
+                            <td>Hiking</td>
+                            <td>1.3</td>
+                            <td>Easy to Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Twin Valley</td>
+                            <td>Hiking</td>
+                            <td>3.9</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">David English</td>
+                            <td>Hiking, Biking</td>
+                            <td>2.4</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Whitely Farms</td>
+                            <td>Hiking, Biking</td>
+                            <td>3.2</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Bryan's Field</td>
+                            <td>Hiking, Biking</td>
+                            <td>2.1</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td><a href="#">Yes</a></td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Boundary Line</td>
+                            <td>Hiking, Biking</td>
+                            <td>1.4</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Chestnut Hill</td>
+                            <td>Hiking, Biking</td>
+                            <td>3.4</td>
+                            <td>Moderate</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Pomeroy</td>
+                            <td>Hiking, Biking</td>
+                            <td>2.0</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="No">
+                            <td><a href="#">White Clay Creek</a></td>
+                            <td colspan="2">Tri-Valley</td>
+                            <td>Hiking, Biking</td>
+                            <td>3.1</td>
+                            <td>Moderate</td>
+                            <td class="col6">No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="Row" data-region="Hiking,Biking" data-category="Yes">
+                            <td><a href="#">Wilmington - Brandywine Park</a></td>
+                            <td colspan="2">Northern Delaware Greenway</td>
+                            <td>Hiking, Biking</td>
+                            <td>0.9</td>
+                            <td>Easy</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Map -->
+
+        </div><!--End main-->
+    <!-- BEGIN Sidebar -->
+    <aside class="sidebar">
+        <div class="side">
+            <h3>Downloadable PDF Maps</h3>
+
+            <p><a href="~/wwwroot/maps/trails/Alapocas.pdf">Alapocas Run</a></p>
+            <p><a href="~/wwwroot/maps/trails/Bellevue.pdf">Bellevue</a></p>
+            <p><a href="~/wwwroot/maps/trails/BrandywineCreek.pdf">Brandywine Creek</a></p>
+            <p><a href="~/wwwroot/maps/trails/CapeHenlopen.pdf">Cape Henlopen</a></p>
+            <p><a href="~/wwwroot/maps/trails/DelawareSeashore.pdf">Delaware Seashore</a></p>
+            <p><a href="~/wwwroot/maps/trails/FenwickIsland.pdf">Fenwick Island</a></p>
+            <p><a href="~/wwwroot/maps/trails/FtDelawareAndFtDuPont.pdf">Fort Delaware and Fort DuPont</a></p>
+            <p><a href="~/wwwroot/maps/trails/FoxPoint.pdf">Fox Point</a></p>
+            <p><a href="~/wwwroot/maps/trails/HoltsLanding.pdf">Holts Landing</a></p>
+            <p><a href="~/wwwroot/maps/trails/KillensPond.pdf">Killens Pond</a></p>
+            <p><a href="~/wwwroot/maps/trails/LumsPond.pdf">Lums Pond</a></p>
+            <p><a href="~/wwwroot/maps/trails/TrapPond2015.pdf">Trap Pond</a></p>
+            <p><a href="~/wwwroot/maps/trails/WhiteClayCreek.pdf">White Clay Creek</a></p>
+            <p><a href="~/wwwroot/maps/trails/Wilmington.pdf">Wilmington State Parks</a></p>
+            <p><a href="~/wwwroot/maps/trails/WolfeneckGordonsPond2015.pdf">Wolfeneck and Gordons Pond</a></p>
+
+            <hr>
+
+
+        </div><!--side-->
+    </aside>
+    <!-- END Sidebar -->
+
+</section><!-- flexbox-container -->
+		
+    </div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-2">
+                    <a href="#" class="footer">About Us</a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="footer">Newsletter</a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="footer">Press Room</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" class="footer">FOIA Requests</a><br /><br />
+                </div>
+                <div class="col-sm-3 last">
+                    <a href="http://www.facebook.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/facebook.png"/>--><i class="fa fa-facebook-square fa-fw fa-lg"></i><span class="wave-text">Facebook</span></a>
+                    <a href="http://www.twitter.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/twitter.png"/>--> <i class="fa fa-twitter-square fa-fw fa-lg"></i><span class="wave-text">Twitter</span></a>
+                    <a href="http://www.instagram.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/instagram.png"/>--> <i class="fa fa-instagram fa-fw fa-lg"></i><span class="wave-text">Instagram</span></a>
+                    <a href="http://www.pinterest.com/destateparks" class="footer" target="_blank"><!--<img src="img/icons/pinterest.png"/>--> <i class="fa fa-pinterest-square fa-fw fa-lg"></i><span class="wave-text">Pinterest</span></a>
+                </div>
+
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--footer-->
+	
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- nav fixed after scroll -->
+    <script src="js/navControl.js"></script>
+	
+	<!-- bootstrap and jquery libs -->
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
